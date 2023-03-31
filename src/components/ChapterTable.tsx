@@ -80,9 +80,37 @@ export function ChapterTable(props: ChapterTableProps) {
             class="cursor-pointer inline-flex items-center gap-1"
           >
             {expandedRows().includes(chap.row.id) ? (
-              <Icon className="i-mdi-arrow-down-bold" text={chap.getValue()} />
+              <span>
+                <svg
+                  class="arr-down inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M11 4h2v12l5.5-5.5l1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5L11 16V4Z"
+                  />
+                </svg>
+                {chap.getValue()}
+              </span>
             ) : (
-              <Icon className="i-mdi-arrow-right-bold" text={chap.getValue()} />
+              <span>
+                {chap.getValue()}
+                <svg
+                  class="arr-right inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M4 15V9h8V4.16L19.84 12L12 19.84V15H4Z"
+                  />
+                </svg>
+              </span>
             )}
           </button>
         ) : (
