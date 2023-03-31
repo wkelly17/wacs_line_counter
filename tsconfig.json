@@ -4,11 +4,12 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "types": ["astro/client", "@cloudflare/workers-types"],
+    "baseUrl": ".",
     "paths": {
       "@layouts/*": ["src/layouts/*"],
-      "@components/*": ["src/components/*"]
-      // "@constants": ["src/constants.ts"],
-      // "@customTypes": ["src/customTypes.ts"]
+      "@components/*": ["src/components/*"],
+      "@constants": ["src/constants.ts"],
+      "@customTypes": ["src/customTypes.ts"]
     }
   }
 }
