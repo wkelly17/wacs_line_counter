@@ -15,7 +15,7 @@ export default defineConfig({
   integrations: [
     solidJs(),
     UnoCSS({
-      presets: [presetUno(), presetIcons()],
+      presets: [presetUno()],
       transformers: [transformerVariantGroup()],
     }),
   ],
