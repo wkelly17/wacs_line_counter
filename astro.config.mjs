@@ -9,7 +9,7 @@ import transformerVariantGroup from "@unocss/transformer-variant-group";
 export default defineConfig({
   output: "server",
   adapter: cloudflare({
-    mode: "advanced",
+    mode: "directory",
   }),
   integrations: [
     solidJs(),
