@@ -7,9 +7,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "cf-preview": "wrangler pages dev ./dist",
+    "cf-dev": "wrangler pages dev --proxy=3000 -- npm run dev",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.1.9"
+    "@astrojs/cloudflare": "^6.2.2",
+    "@astrojs/solid-js": "^2.1.0",
+    "astro": "^2.1.9",
+    "solid-js": "^1.7.0"
+  },
+  "devDependencies": {
+    "wrangler": "^2.13.0",
+    "@cloudflare/workers-types": "^4.20230221.0"
   }
 }
