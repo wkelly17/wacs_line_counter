@@ -15,7 +15,12 @@
     "@astrojs/cloudflare": "^6.2.2",
     "@astrojs/solid-js": "^2.1.0",
     "astro": "^2.1.9",
-    "solid-js": "^1.7.0"
+    "solid-js": "^1.7.0",
+    "@tanstack/solid-table": "^8.8.4",
+    "fflate": "^0.7.4",
+    "remark-html": "^15.0.2",
+    "remark-parse": "^10.0.1",
+    "unified": "^10.1.2"
   },
   "devDependencies": {
     "wrangler": "^2.13.0",
